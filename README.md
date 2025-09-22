@@ -1,4 +1,4 @@
-# My-Portfolio-
+# My-Portfolio
 A personal portfolio website built with HTML, CSS, and JavaScript. Showcases responsive web design, interactive projects, and front-end development skills. Ideal for aspiring web developers looking to demonstrate their work.
 
 Topics/Tags: HTML, CSS, JavaScript, Portfolio, Web Development, Responsive Design
