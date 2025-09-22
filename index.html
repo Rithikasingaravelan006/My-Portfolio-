@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rithika | Personal Portfolio</title>
+    <meta name="description" content="Rithika's Personal Portfolio | Web Developer | Full Stack Projects | Contact Me">
+    <link rel="stylesheet" href="style.css">
+    <!-- ✅ Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- ✅ Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="head"><span>R</span>ITHIKA</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Rithika</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="P3.jpeg" alt="Portrait of Rithika">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi! I’m Rithika, a Computer Science student passionate about technology, creativity, and problem-solving. I’m currently learning full stack development and enjoy building responsive, user-friendly web applications. I constantly explore new tools and frameworks to improve my coding skills and stay updated with industry trends.</p>
+                    <p>I enjoy collaborating with others, sharing ideas, and turning concepts into working projects. My goal is to gain hands-on experience through internships, contribute to real-world projects, and grow as a developer. For me, learning never stops—each day is an opportunity to code, create, and make a meaningful impact.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Prompt Engineering</span><br>AI tools (ChatGPT, DALL·E, etc.)</li>
+                            <li><span>Web Development</span><br>Frontend | Backend | Database</li>
+                            <li><span>Digital Marketing (Learning)</span><br>SEO | Social Media</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor’s Degree | CS</span><br>Bishop Heber College, Trichy | 2024-2027</li>
+                            <li><span>12th | Computer Science</span><br>Sowdambika Matriculation School, Thottiyam | 2024</li>
+                            <li><span>10th | State Board</span><br>GHS Girls School, Karur | 2022</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects">
+                <div>
+                    <i class="fa-solid fa-leaf"></i>
+                    <h2>GreenDen</h2>
+                    <p>Greenden is a plant e-commerce website offering stylish pots and plants with fast delivery, affordable prices, and eco-friendly design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-map-pin"></i>
+                    <h2>Tripadvisor</h2>
+                    <p>Tripadvisor is a travel website built with HTML, Tailwind CSS, and JavaScript, helping users explore hotels, restaurants, and activities easily.</p> 
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-shirt"></i>
+                    <h2>Clothing Website</h2>
+                    <p>Clothing Website is a responsive e-commerce site using HTML, Tailwind CSS, and JavaScript, showcasing collections, offers, and clean user-friendly design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> rithis006@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9345959523</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rithikasingaravelan06/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Rithikasingaravelan006" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/rithi_s__/?__pwa=1" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Footer -->
+    <footer class="copyright">
+        <p>© 2025 Rithika. Made with <i class="fa-solid fa-heart"></i></p>
+    </footer>
+
+    <!-- ✅ JavaScript -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
